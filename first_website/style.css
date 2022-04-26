@@ -1,0 +1,1008 @@
+/* GENERAL */
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+p{
+    font-size: 18px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+h1,h2,p{
+    font-family: 'Lato', sans-serif;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+.headline{
+  margin: 30px;
+  text-align: center;
+  color:rgb(253, 176, 33);
+}
+
+/* <------------------------------------- Main page -------------------------------------> */
+
+/* Banner */
+.banner{
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 50px;
+    color: rgb(253, 176, 33);
+    background: url("pictures/main_banner.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.banner h1
+{
+    letter-spacing: 15px;
+    font-family:'Courier New', Courier, monospace;
+}
+/* Top menu */
+.navbar{
+    position: sticky;
+    top:0;
+    background-color: rgb(202, 226, 234);
+    z-index: 1;
+}
+
+.top{
+    display: flex;
+    flex-wrap:wrap;
+    height: 60px;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.top>a img:hover{
+  border: #207188 solid 3px;
+  transition: all 0.2s ease;
+  border-radius:20px;
+}
+.menu{
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+.menu a{
+    margin-right: 30px;
+    height: 60px;
+    width: 90px;
+    display: table-cell; 
+    vertical-align: middle;
+    color: white;
+}
+
+.menu li{
+    list-style: none;
+    height: 60px;
+    width: 120px;
+    text-align: center;
+}
+
+.menu ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu a:link { color: black; }
+.menu a:visited { color: black; }
+
+.menu li:hover{
+   background-color: rgb(253, 176, 33);
+   transition: all 0.3s ease;
+}
+
+/* Articles */
+#article{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#article h2
+{
+    margin-left: 50px;
+    margin-bottom: 20px;
+}
+
+#article a
+{
+    text-decoration: none;
+    font-size: 20px;
+}
+
+#article a:link { color: black; }
+#article a:visited { color: black; }
+
+#article a:hover
+{
+    color: rgb(253, 176, 33);
+    transition: all 0.2s ease;
+ }
+
+ #article img
+ {
+  box-shadow: 0 1px 4px rgba(34, 25, 25, 0.4);
+  -moz-box-shadow: 0 1px 3px rgba(34,25,25,0.4);
+  -webkit-box-shadow: 0 1px 4px rgba(34, 25, 25, 0.4);
+ }
+ .text img{
+  max-width: 100%;
+  height: auto;
+  z-index: -1;
+ }
+
+ #article img:hover
+ {
+  transform: scale(1.05);
+ }
+
+.text{
+    display: flex;
+    justify-content: center;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 100px;
+}
+
+.text p{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    justify-content: center;
+    align-content: space-between;
+    margin: 20px; 
+    line-height: 1.4em;
+}
+
+.text span
+{
+    font-style: italic;
+}
+
+/* Form */
+.form
+{
+    display: flex;
+    justify-content: center;
+}
+
+.form h1
+{
+    margin-bottom: 10px;
+}
+
+form
+{
+    width: 50vw;
+    margin-bottom: 20px;
+    margin-top: -80px;
+}
+fieldset{
+    border: 2px solid rgb(14, 5, 5);
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+input{
+    margin: 10px;
+    border: 2px solid rgb(14, 5, 5);
+    border-radius: 10px;
+    margin-left:20px;
+    height: 30px;;
+}
+
+legend
+{
+    font-family: 'Lato', sans-serif;
+    font-weight: bolder;
+    padding: 10px;
+    font-size: 40px;
+}
+
+label{
+    margin-left: 20px;
+}
+
+textarea{
+    margin: 20px;
+    margin-left: 37px;
+    margin-right: 37px;
+    resize: none;
+    border: 2px solid rgb(14, 5, 5);
+    border-radius: 10px;
+}
+
+#button
+{
+  background-color: #fff;
+  border-radius: 24px;
+  border-style: none;
+  box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+  box-sizing: border-box;
+  color: black;
+  cursor: pointer;
+  font-size: 16px;
+  height: 52px;
+  width: 200px;
+  font-weight: bolder;
+  max-width: 100%;
+  overflow: visible;
+  text-align: center;
+  z-index: 0;
+  margin-bottom: 25px;
+  margin-left: 40px;
+}
+
+#button:hover {
+  background: #F6F9FE;
+  color: #174ea6;
+}
+
+#button:active {
+  box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%), 0 8px 12px 6px rgb(60 64 67 / 15%);
+  outline: none;
+}
+
+#button:focus {
+  outline: none;
+  border: 2px solid #4285f4;
+}
+
+/* Go to the top */
+.topper
+{
+    float:right;
+   padding-right: 15px;
+}
+/* Footer */
+footer {
+    padding:50px 0;
+    background-color:rgb(253, 176, 33);
+    color:white;
+  }
+  
+  footer ul {
+    padding:0;
+    list-style:none;
+    text-align:center;
+    font-size:18px;
+    line-height:1.6;
+
+  }
+  
+  footer ul a {
+    color:inherit;
+    text-decoration:none;
+    opacity: 0.75;
+  }
+  
+  footer ul a:hover {
+    opacity:1;
+    font-weight: 600;
+  }
+  
+  footer .social {
+    text-align:center;
+    padding-bottom:25px;
+  }
+  
+  footer .social > a {
+    font-size:24px;
+    width:40px;
+    height:40px;
+    line-height:40px;
+    display:inline-block;
+    text-align:center;
+    margin-left: 10px;
+    margin-right:25px;
+    color:inherit;
+    opacity:0.75;
+  }
+  
+  footer .social > a:hover {
+    opacity:0.9;
+  }
+  
+  footer .copyright {
+    margin-top:25px;
+    text-align:center;
+    font-size:13px;
+    margin-bottom:0;
+    opacity: 1;
+    font-style: italic;
+  }
+
+  footer ul .up
+  {
+      text-transform: uppercase;
+      margin-bottom: 10px;
+  }
+
+/* <------------------------------------- Visit Us page -------------------------------------> */
+
+.flex
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+/* Street View */
+
+.map
+{
+    display: flex;
+    flex-wrap: wrap;
+    width: 45%;
+    align-content: space-between;
+    margin-left: 40px;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.map span
+{
+  font-weight: bolder;
+}
+
+.map img
+{
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+iframe
+{
+    margin-left: 20px;
+    margin-top: 10px;
+    width: 600px;
+    height: 400px;
+}
+
+/* Tickets and Open Hours*/
+.ticket {
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    display: flex;
+  }
+  
+  .ticket h2 {
+    font-size: 26px;
+    margin: 20px 0;
+    text-align: center;
+  }
+
+  .ticket h1
+  {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-left: 10px;
+  }
+
+  .tab
+  {
+    text-align: center;
+  }
+  
+  .tab li{
+      border-radius: 10px;
+      padding: 25px 30px;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 25px;
+
+  }
+
+.tab .table-header {
+    background-color: rgb(253, 176, 33);
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    font-weight: bolder;
+  }
+  .tab .table-row {
+    background-color: rgb(202, 226, 234);
+    box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.1);
+  }
+  .tab .col-1 {
+    flex-basis: 30%;
+  }
+  .tab .col-2 {
+    flex-basis: 30%;
+  }
+  .tab .col-3 {
+    flex-basis: 30%;
+  }
+
+  /* Neighbourhood */
+
+  .neigh
+  {
+    text-align: center;
+  }
+
+  .neigh h1
+  {
+    margin-bottom: 20px;
+    color:rgb(253, 176, 33);
+  }
+
+  .neigh p
+  {
+    margin-bottom: 50px;
+    text-align: center;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+  .neigh a
+  {
+    color: #4285f4;
+  }
+
+  .neigh a:hover
+  {
+    color: #084ec0;
+  }
+
+/* <------------------------------------- Events -------------------------------------> */
+#events h2
+{
+    margin-left: 50px;
+    margin-bottom: 20px;
+}
+
+#events a
+{
+    text-decoration: none;
+    font-size: 24px;
+}
+
+#events a:link { color: black; }
+#events a:visited { color: black; }
+
+#events a:hover{
+    color: rgb(253, 176, 33);
+    transition: all 0.2s ease;
+ }
+
+#events img
+ {
+  box-shadow: 0 1px 4px rgba(34, 25, 25, 0.4);
+  -moz-box-shadow: 0 1px 3px rgba(34,25,25,0.4);
+  -webkit-box-shadow: 0 1px 4px rgba(34, 25, 25, 0.4);
+ }
+ .responsive{
+  cursor: default;
+  pointer-events: none;  
+ }
+
+/* <------------------------------------- Artists -------------------------------------> */
+
+ .people
+ {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+ }
+
+ .artist
+ {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+  width: 30%;
+  margin:20px;
+  align-content:space-between;
+  border: solid 3px rgb(253, 176, 33);
+  border-radius: 15px;
+  padding: 15px;
+}
+
+.artist h2
+{
+  color:rgb(253, 176, 33);
+  margin-top: 10px;
+  margin-bottom: 10px;
+  align-self: center;
+}
+
+.artist img{
+  align-self: center;
+  box-shadow: 0 1px 4px rgba(34, 25, 25, 0.4);
+  -moz-box-shadow: 0 1px 3px rgba(34,25,25,0.4);
+  -webkit-box-shadow: 0 1px 4px rgba(34, 25, 25, 0.4);
+  max-width: 100%;
+  height: auto;
+}
+
+.artist img:hover
+{
+  transform: scale(1.05);
+  z-index: -1;
+}
+
+/* Article 1,2,3,4 */
+article
+{
+  display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+}
+
+.inside
+{
+  display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+  width: 100%; 
+  align-content:space-between;
+  padding: 15px;
+}
+
+article h1
+{
+  text-align: center;
+  margin-bottom: 40px;
+  color:rgb(253, 176, 33);
+}
+
+article img{
+  margin-bottom: 40px;
+  margin-top: 30px;
+  align-self: center;
+  box-shadow: 0 1px 4px rgba(34, 25, 25, 0.4);
+  -moz-box-shadow: 0 1px 3px rgba(34,25,25,0.4);
+  -webkit-box-shadow: 0 1px 4px rgba(34, 25, 25, 0.4);
+  max-width: 100%;
+  height: auto;
+}
+
+article p
+{
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom:30px ;
+}
+
+/* <------------------------------------- About Us -------------------------------------> */
+.founder
+{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.anna
+{
+  display: flex;
+  flex-wrap: wrap;
+  align-content:space-between;
+}
+
+.anna img
+{
+  margin: 30px;
+  margin-left:50px;
+  box-shadow: 0 1px 4px rgba(34, 25, 25, 0.4);
+  -moz-box-shadow: 0 1px 3px rgba(34,25,25,0.4);
+  -webkit-box-shadow: 0 1px 4px rgba(34, 25, 25, 0.4);
+}
+
+.anna h1
+{
+  color:rgb(253, 176, 33);
+  margin: 30px;
+}
+
+.anna p
+{
+  width: 500px;
+  margin: 30px;
+  margin-top: 50px;
+}
+
+.photos
+{
+  display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+}
+
+.gallery {
+  margin: 15px;
+}
+
+.gallery img:hover {
+   border: 5px solid rgb(253, 176, 33);
+   transition: all 0.3s ease;
+}
+
+.gallery img
+{
+  margin:10px;
+  box-shadow: 0 1px 4px rgba(34, 25, 25, 0.4);
+  -moz-box-shadow: 0 1px 3px rgba(34,25,25,0.4);
+  -webkit-box-shadow: 0 1px 4px rgba(34, 25, 25, 0.4);
+  max-width: 100%;
+  height: auto;
+}
+
+/* <------------------------------------- Responsive website -------------------------------------> */
+
+/* Small devices (portrait tablets and large phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  /* Main page */
+  .top{
+    height: 85px;
+}
+  .menu{
+    font-size: 16px;
+    margin-right: 10px;
+}
+.menu a{
+  height: 50px;
+  width: 70px;
+}
+.menu li{
+  height: 50px;
+  width: 110px;
+}
+#article .text{
+  flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+#article a
+{
+    text-align: center;
+}
+.form{
+  display: none;
+}
+/* Artists */
+.artist{
+  width: 90%;
+}
+/* About Us */
+.anna img{
+  transform: scale(0.8);
+  margin:10px;
+  z-index: -1;
+  margin-bottom: 0;
+}
+.anna h1{
+  margin: 10px;
+  margin-left: 25px;
+  margin-top: 0;
+}
+.anna p{
+  margin-top: 5px;
+  width: 80vw;
+}
+/* Visit Us */
+.map{
+  width: 80vw;
+}
+.ticket{
+  flex-direction: column;
+}
+/* Events */
+#events .text{
+  flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+#events h2
+{
+    width: 80%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+#events a{
+  text-align: center;
+}
+}
+
+@media only screen and (min-width:601px) and (max-width: 768px) {
+  /* Main page */
+  .top{
+    height: 85px;
+}
+  .menu{
+    font-size: 20px;
+    margin-right: 10px;
+}
+.menu a{
+  height: 50px;
+  width: 120px;
+}
+.menu li{
+  height: 50px;
+  width: 100px;
+}
+#article .text{
+  flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+#article a
+{
+    text-align: center;
+}
+.form{
+  display: none;
+}
+/* Artists */
+.artist{
+  width: 90%;
+}
+/* About Us */
+.anna img{
+  text-align: center;
+  z-index: -1;
+}
+.anna h1{
+  margin: 10px;
+  margin-left: 25px;
+  margin-top: 0;
+}
+.anna p{
+  margin-top: 5px;
+  width: 80vw;
+}
+/* Visit Us */
+.map{
+  width: 80vw;
+}
+.ticket{
+  flex-direction: column;
+  width: 90vw;
+}
+/* Events */
+#events .text{
+  flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+#events h2
+{
+    width: 80%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+#events a{
+  text-align: center;
+}
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+   /* Main page */
+   .menu li{
+    height: 60px;
+    width: 110px;
+  }
+#article .text{
+  flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+#article a
+{
+    text-align: center;
+}
+.form
+{
+  justify-content: flex-start;
+  margin-left: 35px;
+}
+/* Artists */
+.artist{
+  width:40%;
+}
+/* About Us */
+.founder{
+  width: 30%;
+}
+.anna img{
+  text-align: center;
+  z-index: -1;
+}
+.anna h1{
+  margin: 10px;
+  margin-left: 25px;
+  margin-top: 0;
+}
+.anna p{
+  margin-top: 5px;
+  width: 80vw;
+}
+/* Visit Us */
+.map{
+  width: 80vw;
+}
+.ticket{
+  flex-direction: column;
+  width: 80vw;
+}
+}
+@media only screen and (min-width: 993px) and (max-width: 1400px){
+  /* About Us */
+  .anna h1
+{
+  display: flex;
+  align-items: center;
+  height:512px;
+}
+.anna p{
+  margin-top: 5px;
+  width: 80vw;
+}
+}
+@media only screen and (min-width: 1401px) and (max-width: 1470px){
+  /* About Us */
+  .anna h1
+{
+  display: flex;
+  align-items: center;
+  height:512px;
+}
+.anna p{
+  margin-top: 5px;
+  margin: 10px;
+  width: 80vw;
+}
+}
+@media only screen and (min-width: 1471px) and (max-width: 1600px){
+  /* About Us */
+.anna p{
+  margin: 10px;
+  margin-top: 50px;
+}
+}
+
+@media only screen and (max-width: 600px){
+  /* Main page */
+  .top{
+    height: 85px;
+}
+  .menu{
+    font-size: 12px;
+    font-weight: 600;
+    margin-right: 5px;
+}
+.menu a{
+  height: 50px;
+  width: 50px;
+}
+.menu li{
+  height: 50px;
+  width: 70px;
+}
+#article .text{
+  flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+#article a
+{
+    text-align: center;
+}
+#article p{
+  font-size: 14px;
+}
+#article h2{
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+.text{
+  margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+.text p a{
+  margin: 10px;
+  font-style: italic;
+}
+.banner{
+  height: 40vh;
+}
+.form{
+  display: none;
+}
+/* Artists */
+.artist{
+  width: 80%;
+}
+.artist p{
+  font-size: 14px;
+}
+/* About Us */
+.anna{
+  align-content: center;
+}
+.anna img{
+  display: none;
+}
+.anna h1{
+  margin:5px;
+  margin-left: 20px;
+  font-size: 22px;
+}
+.anna p{
+  margin-top: 5px;
+  width: 80vw;
+  font-size: 16px;
+}
+.gallery img
+{
+  margin:0;
+}
+/* Visit Us */
+.map{
+  width: 80vw;
+}
+.map p{
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.ticket{
+  flex-direction: column;
+}
+.headline{
+  font-size: 22px;
+  margin: 15px;
+}
+/* Events */
+#events .text{
+  flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+  margin-bottom: 0px;
+}
+
+#events h2
+{
+    width: 80%;
+    text-align: center;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+#events a{
+  text-align: center;
+  font-size: 18px;
+}
+#events p{
+  font-size: 14px;
+}
+}
+
+
+
